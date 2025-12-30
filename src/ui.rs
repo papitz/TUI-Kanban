@@ -680,7 +680,7 @@ fn draw_help(f: &mut Frame, app: &mut App) {
                 .fg(app.theme.accent)
                 .add_modifier(Modifier::BOLD),
         )]),
-        Line::from("  Ctrl+P : Open project list"),
+        Line::from("  Ctrl+p : Open project list"),
         Line::from("  a      : Add new project (in project list)"),
         Line::from("  d      : Delete project (in project list)"),
         Line::from("  s      : Set selected project as default (in project list)"),
@@ -691,7 +691,7 @@ fn draw_help(f: &mut Frame, app: &mut App) {
                 .fg(app.theme.accent)
                 .add_modifier(Modifier::BOLD),
         )]),
-        Line::from("  Shift+T : Change theme"),
+        Line::from("  Ctrl+t : Change theme"),
         Line::from("  ?       : Show this help"),
         Line::from("  q       : Quit application"),
     ];

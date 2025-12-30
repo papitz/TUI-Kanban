@@ -52,7 +52,7 @@ fn run_app<B: ratatui::backend::Backend>(
 
         // handle input
         if let Event::Key(key) = event::read()? {
-            // Handle Ctrl+P globally to open project list
+            // Handle Ctrl+p globally to open project list
             if key.code == KeyCode::Char('p') && key.modifiers.contains(KeyModifiers::CONTROL) {
                 if app.input_mode == InputMode::Normal {
                     app.open_project_list();
@@ -60,8 +60,8 @@ fn run_app<B: ratatui::backend::Backend>(
                 continue;
             }
 
-            // Handle Shift+T globally to open theme selector
-            if key.code == KeyCode::Char('T') && key.modifiers.contains(KeyModifiers::SHIFT) {
+            // Handle Ctrl+t globally to open theme selector
+            if key.code == KeyCode::Char('t') && key.modifiers.contains(KeyModifiers::CONTROL) {
                 if app.input_mode == InputMode::Normal {
                     app.open_theme_selector();
                 }
