@@ -161,6 +161,8 @@ TUI-Kanban supports multiple color themes to match your terminal preferences and
 
 ### Changing Your Theme
 
+The theme can be changed from the UI by pressing `ctrl+p`.
+
 Edit your configuration file at `~/.config/tui-kanban/config.json` (Linux/macOS) or `%APPDATA%\tui-kanban\config.json` (Windows):
 
 ```json
